@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=yes, maximum-scale=1.0, minimum-scale=1.0">
+<title>home</title>
+<meta name="keywords" content="キセル,喫煙具,ライター,伝統,技,職人,手作り煙管">
+<meta name="description" content="粋を極める伝統の手作りキセル。匠の技、ここにあり。">
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<link rel="stylesheet" href="css/jquery.fs.boxer.min.css">
+<script src="js/jquery.fs.boxer.min.js"></script>
+
+<script type="text/javascript">
+$(function() {
+    var nav = $('#topmenu');
+    //navの位置
+    var navTop = nav.offset().top;
+    //スクロールするたびに実行
+    $(window).scroll(function () {
+        var winTop = $(this).scrollTop();
+        //スクロール位置がnavの位置より下だったらクラスfixedを追加
+        if (winTop >= navTop) {
+            nav.addClass('fixed')
+        } else if (winTop <= navTop) {
+            nav.removeClass('fixed')
+        }
+    });
+});
+</script>
+
+<!--
+<style type="text/css">
+body {
+  background-image: url(images/top02.jpg);
+  background-position:bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+</style>
+-->
+</head>
+
+<body>
+  <div class="gkg">
+  <div id="header">
+
+  <div id="wrapper">
+    <!-- menu -->
+    <div id="topmenu">
+      <ul>
+        <li><a href="index.html">ホーム</a></li>
+        <li><a href="about.html">キセルのあれこれ</a></li>
+        <li><a href="products.html">作品</a></li>
+        <li><a href="company.html">会社概要</a></li>
+        <li><a href="mailto:info@iizuka-k.co.jp?Subject">お問い合わせ</a></li>
+      </ul>
+    </div>
+  </div>
+  </div>
+  <!-- menu end -->
+  <!-- topBanner -->
+  <div id="topBanner">
+    <img src="images/top03.jpg" alt="top">
+	</div>
+  <!-- topBanner end -->
+
+<div id="wrapper">
+
+  <div class="rogo">
+    <img src="images/rogo.png">
+  </div>
+  <div class="topTxt">
+    <h2>匠の技　キセル職人</h2>
+    <h3>～粋を極める伝統の手作りキセル～</h3>
+  </div>
+
+<div class="tMain">
+  <div class="tContents1">
+    <h2>ごあいさつ</h2>
+      <p>かつてキセルは、おもに会津、東京、京都、それに燕で作られており、<br>昭和4年には燕で190戸（390人）がキセルを作っていました。<br>
+当時の燕の人口は1万2,000人（約2100戸）ほどで、<br>約20%の410戸が金物づくりをしており、<br>戸数では金物づくりの半数近くがキセルを作っていました。<br>
+それもそのはず、燕でのキセル作りは古く、<br>その始まりは明和年間（1764～72）とも安永年間（1772～81）ともいわれ、<br>少なくとも200年の長い伝統があります。<br>
+最近では紙巻たばこを切ってキセルに差込み、<br>吸っている人もいるほど愛されているようです。<br><br>
+この愛すべきキセルですが、<br>当初各地で作られていたものも年々職人の数が減っていき、<br>
+今現在では製造・販売を行っている会社は、<br>弊社1件のみとなってしまいました。<br>
+キセルが歴史に埋もれないよう、<br>私たちはこれからも精力を捧げて<br>キセルを世の中に伝えていきたいと願っております。</p>
+  </div>
+  <div class="tContents2">
+    <h2>職人</h2>
+    <img src="images/syokunin.png"  class="alignleft">
+      <h3>飯塚　昇</h3>
+        <p>昭和9年12月29日生まれ</p>
+        <p>父親もキセル職人。<br>父の後ろ姿を見ながら育ち、昭和25年に弟子入り。<br>
+          昭和45年頃までキセル作りに励むが、途中一度転職の経験も有り。<br>
+          転職した仕事が定年を迎えた為、60歳から再びキセル作りに戻る。<br>
+          72歳の現在でも現役。<br>
+          時間を見つけては、全国各地へキセル巡りの旅へ出掛ける。<br>
+          海外へもキセルを求めて旅立った事も。<br>
+          燕市産業資料館で年1回開催される『つばめ手仕事展』へ毎年出展。</p>
+  </div>
+</div><!-- tMain end -->
+
+</div><!-- wrapper end -->
+<!-- footer  -->
+<div id="footer">
+  <div class="inner">
+    <p class="company">飯塚金属株式会社</p>
+    <p class="address">〒959-1245　新潟県燕市東大田2635番地</p>
+    <p class="tel">TEL　0256-63-5221<br>FAX　0256-54-4643</p>
+      <ul class="icon">
+        <li href="https://twitter.com/share" target="blank"><img src="images/icon1.png" alt="twitter"></li>
+        <li href="https://syncer.jp" target="blank"><img src="images/icon2.png" alt="facebook"></li>
+        <li href="https://syncer.jp" target="blank"><img src="images/icon3.png" alt="google+"></li>
+      </ul>
+    <p class="copyright">Copyright© 飯塚金属株式会社　All rights reserved.</a>
+  </div>
+</div><!-- footer end -->
+</div>
+</body>
+</html>

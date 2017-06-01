@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, user-scalable=yes, maximum-scale=1.0, minimum-scale=1.0">
+<title>会社概要</title>
+<meta name="keywords" content="キセル,喫煙具,ライター,伝統,技,職人,手作り煙管">
+<meta name="description" content="粋を極める伝統の手作りキセル。匠の技、ここにあり。">
+<!--[if lt IE 9]>
+<script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+<![endif]-->
+<link rel="stylesheet" href="css/style.css" type="text/css" media="screen">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<link rel="stylesheet" href="css/jquery.fs.boxer.min.css">
+<script src="js/jquery.fs.boxer.min.js"></script>
+
+<script type="text/javascript">
+$(function() {
+    var nav = $('#topmenu');
+    //navの位置
+    var navTop = nav.offset().top;
+    //スクロールするたびに実行
+    $(window).scroll(function () {
+        var winTop = $(this).scrollTop();
+        //スクロール位置がnavの位置より下だったらクラスfixedを追加
+        if (winTop >= navTop) {
+            nav.addClass('fixed')
+        } else if (winTop <= navTop) {
+            nav.removeClass('fixed')
+        }
+    });
+});
+</script>
+
+<!--
+<style type="text/css">
+body {
+  background-image: url(images/top02.jpg);
+  background-position:bottom;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+</style>
+-->
+</head>
+
+<body>
+  <div class="gkg">
+  <div id="header">
+    <!-- menu -->
+    <div id="topmenu">
+      <ul>
+        <li><a href="index.html">ホーム</a></li>
+        <li><a href="about.html">キセルのあれこれ</a></li>
+        <li><a href="products.html">作品</a></li>
+        <li><a href="company.html">会社概要</a></li>
+        <li><a href="mailto:info@iizuka-k.co.jp?Subject">お問い合わせ</a></li>
+      </ul>
+    </div>
+  </div>
+  </div>
+  <!-- menu end -->
+
+<div id="wrapper">
+
+  <div class="cMain">
+    <h2>会社概要</h2>
+    <p class="cpmpanyvisual">
+      <img alt="companyvisual" src="images/company01.jpg"></p>
+  <div class="companyData">
+      <dl class="companyData_item">
+		    <dt>会社名</dt>
+		    <dd>飯塚金属株式会社</dd>
+      </dl>
+      <dl class="companyData_item">
+        <dt>所在地</dt>
+        <dd>〒959-1245　新潟県燕市東太田2635番地<br>TEL	0256-63-5221<br>FAX	0256-64-4643</dd>
+      </dl>
+      <dl class="companyData_item">
+        <dt>代表者</dt>
+        <dd>飯塚　景造</dd>
+      </dl>
+      <dl class="companyData_item">
+        <dt>創業</dt>
+        <dd>大正5年</dd>
+      </dl>
+      <dl class="companyData_item">
+        <dt>資本金</dt>
+        <dd>1,000万円（2007年1月現在）</dd>
+      </dl>
+      <dl class="companyData_item">
+        <dt>取引銀行</dt>
+        <dd>第四銀行　燕支店<br>北越銀行　燕支店　…他</dd>
+      </dl>
+      <dl class="companyData_item">
+        <dt>事業内容</dt>
+        <dd>キセル、ライター、名入れライター、チャッカー等の製造、販売<br>喫煙具全般の卸</dd>
+      </dl>
+      <dl class="companyData_item">
+        <dt>グループ企業</dt>
+        <dd>飯塚プレス工業株式会社（プレス加工、金属全般）<br>
+          株式会社トーエツ（樹脂成型、金型全般）<br>
+          飯塚精工株式会社（板金、器物等全般）</dd>
+        </dl>
+    </div>
+  </div>
+</div><!-- wrapper end -->
+
+<!-- footer  -->
+<div id="footer">
+  <div class="inner">
+    <p class="company">飯塚金属株式会社</p>
+    <p class="address">〒959-1245　新潟県燕市東大田2635番地</p>
+    <p class="tel">TEL　0256-63-5221<br>FAX　0256-54-4643</p>
+      <ul class="icon">
+        <li href="<サービスのURL>" target="blank"><img src="images/icon1.png" alt="twitter"></li>
+        <li href="<サービスのURL>" target="blank"><img src="images/icon2.png" alt="facebook"></li>
+        <li href="<サービスのURL>" target="blank"><img src="images/icon3.png" alt="google+"></li>
+      </ul>
+    <p class="copyright">Copyright© 飯塚金属株式会社　All rights reserved.</p>
+</div><!-- footer end -->
+</div>
+</body>
+</html>

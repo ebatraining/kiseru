@@ -1,0 +1,622 @@
+@charset "utf-8";
+
+@font-face {
+  font-family: 青柳疎石フォント2;
+  src:url('青柳疎石フォント2.ttf')format("truetype");
+}
+
+/*--------------- 全体   ------------------*/
+
+body{
+color:#000;
+font-family: 'Times New Roman', 游明朝体, 'Yu Mincho', 'ヒラギノ明朝 Pro W3', 'Hiragino Mincho Pro', HGS明朝B,
+ 'Hiragino Mincho ProN', 'ＭＳ Ｐ明朝', 'MS PMincho', serif;
+background-color:#fff;
+-webkit-text-size-adjust: none;
+margin: 0;
+}
+
+/***
+.gkg {
+	background-color:	rgba(255,255,255,0.8);
+}
+***/
+
+ol, ul,li {list-style: none;}
+
+#wrapper{
+margin:0 auto;
+padding:0 1%;
+width:98%;
+position:relative;
+
+}
+
+/*************
+/* loading...
+*************/
+
+#loader-bg {
+  display: none;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  background: #6e7955;
+  background-image: url(../images/yagasuri.jpg);
+  background-position: left top;
+  background-repeat: repeat-y;
+  z-index: 3;
+}
+
+#bgimg{
+  background-image: url(../images/yagasuri.jpg);
+  background-position: right top;
+  background-repeat: repeat-y;
+  z-index: 2;
+  width: 100%;
+  height: 100%;
+}
+
+#loader {
+ display: none;
+  position: fixed;
+  text-align: center;
+  color: #fff;
+  z-index: 4;
+  vertical-align: middle;
+  display: block;
+  width: 100%;
+  margin: 0 auto;
+  top: 15%;
+}
+
+#wrap{
+  border-top:3px solid #ce5242;
+}
+/*************
+/* ヘッダー
+*************/
+#header{
+  overflow:hidden;
+  background-color: #fff;
+  padding:5px;
+}
+
+* html #header{height:1%;}
+
+
+/**************************
+/* トップメニュー
+**************************/
+.fixed {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left:0;
+  z-index: 1;
+}
+
+#topmenu {
+  background-color: #fff;
+  margin-bottom: 5px;
+  width: 100%;
+}
+
+#topmenu ul{
+  padding:0;
+  width: 100%;
+  display: table;
+  table-layout: fixed;
+  text-align: center;
+  border-left:1px  solid #ddd;
+}
+
+#topmenu li{
+  display:table-cell;
+  *display: inline;
+  *zoom:1;
+  border-right:1px solid #ddd;
+}
+
+#topmenu a{
+  color:#333;
+  font-size:14px;
+  letter-spacing: 4px;
+  display:block;
+  padding:5px 0;
+  text-decoration:none;
+}
+
+#topmenu li.active a,#topmenu a:hover{
+  border-color:#ddd;
+  background:#eee;
+}
+
+
+/**************************
+/* TOP画像～ロゴ
+**************************/
+#topBanner{
+margin:0 auto 30px;
+padding:0;
+width:100%;
+}
+
+#topBanner img{
+  width:100%;
+  height:auto;
+}
+
+.topTxt{
+/*****font-family: '青柳疎石フォント2',serif;*****/
+top:50px;
+left:10px;
+padding:50px;
+line-height:1px;
+  text-align: center;
+}
+
+.topTxt h2{
+padding-bottom:5px;
+color:#000;
+font-size:25px;
+}
+
+.topTxt h3{
+font-size:17px;
+color:#000;
+}
+
+
+.rogo img {
+  margin-top: 100px;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+
+/*************
+TOPCONTENTS
+*************/
+.tMain {
+  margin-top: 50px;
+  margin-bottom: 80px;
+}
+.tMain h2{
+  padding: 0 0 2px 10px;
+  margin-bottom:35px;
+  font-size:30px;
+  line-height: 45px;
+  border-bottom: 1px solid #ddd;
+  border-left:10px  solid #ddd;
+}
+
+.tContents1 p{
+  margin-bottom:50px;
+  overflow:hidden;
+  font-size:16px;
+  line-height: 30px;
+  letter-spacing: .15em;
+}
+
+.tContents2{
+  margin-bottom:30px;
+  overflow:hidden;
+  letter-spacing: .11em;
+}
+
+.tContents2 h3{
+  text-align: center;
+  margin-top:50px;
+  font-size:25px;
+}
+
+.tContents2 p{
+  margin-top: 15px;
+  line-height: 25px;
+  text-align: center;
+  font-size: 14px;
+}
+
+.tContents2 img{
+  max-width:100%;
+  height:auto;
+}
+
+.alignleft{
+  float:left;
+  clear:left;
+  margin:5px 25px 10px 0;
+}
+
+/*************
+/* フッター
+*************/
+.inner{
+margin:0 auto;
+width:100%;
+}
+
+#footer{
+font:12px verdana,"ヒラギノ丸ゴ ProN W4","Hiragino Maru Gothic ProN","メイリオ","Meiryo","ＭＳ Ｐゴシック","MS PGothic",Sans-Serif;
+line-height:1;
+clear:both;
+padding:20px 0;
+overflow:hidden;
+background:#0C0C0C;
+color:#fff;
+overflow: hidden;
+}
+
+.company {
+font-family: "ＭＳ Ｐ明朝", "細明朝体", "ヒラギノ明朝 Pro W3";
+font-size:30px;
+}
+
+.tel {
+font-size:15px;
+float: left;
+clear: left;
+}
+
+.inner ul{
+  text-align: right;
+}
+
+.icon li {
+  display: inline-block;
+}
+
+.copyright{
+  text-align:right;
+  font-size:12px;
+}
+
+* html #footer{height:1%;}
+
+
+
+/*************
+/* 会社概要
+*************/
+dl,dt,dd {
+  overflow: hidden;
+}
+
+.cMain {
+  margin-top:  30px;
+}
+
+.cMain h2 {
+  font-size: 30px;
+  padding: 0 0 1px 13px;
+  letter-spacing: 0.1em;
+  margin-top: 30px;
+  border-left: 10px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+p.cpmpanyvisual{
+  float:right;
+  clear:right;
+  margin: 60px 50px 0 0;
+}
+
+.companyData {
+  margin-top: 15px;
+  padding: 30px;
+  margin-bottom: 20px;
+}
+
+dl.companyData_item + .companyData_item {
+  margin-top: 25px;
+}
+dl.companyData_item dt, .companyData_item dd {
+	line-height: 1.6;
+  font-size: 14px;
+}
+dl.companyData_item dt {
+	float: left;
+	width: 10em;
+	color: #888;
+}
+
+/**************************
+/* 商品ページナビ
+**************************/
+#pContents h2{
+  margin-top: 20px;
+}
+
+.cNav ul{
+  display: table;
+  width:46%;
+  border-collapse: separate;
+  table-layout:fixed;
+  padding: 0;
+}
+
+.cNav li {
+  display:table-cell;
+  *display: inline;
+  *zoom:1;
+  text-align: center;
+}
+
+.cNav li a{
+  color: #787878;
+  text-decoration: none;
+}
+
+.cNav a { text-decoration:none;}
+.cNav a:hover { text-decoration:underline;}
+
+/*************
+/* 商品
+*************/
+.setumei h6 {
+  text-align: right;
+  font-size: 13px;
+}
+
+.setumei h5 {
+  font-size: 14px;
+}
+
+#itemAll {
+  margin-top: 50px;
+}
+
+#itemAll ul{
+  display: table;
+  border-collapse: separate;
+  table-layout:fixed;
+  border-spacing: 20px 5px;
+  margin-top: 15px;
+  padding: 0;
+}
+
+#itemAll li{
+  width: 24%;
+  display:table-cell;
+  *display: inline;
+  *zoom:1;
+}
+
+#item01 img, #item02 img, #item03 img{
+  width: 100%;
+  border: 0px;
+}
+
+#item01, #item02, #item03{
+  margin: 0;
+}
+
+#itemAll h1 {
+  font-size:30px;
+  padding: 0 0 1px 13px;
+  letter-spacing: 0.1em;
+  border-left:10px  solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+#itemAll p {
+  font-size: 13px;
+  text-align: center;
+}
+
+
+/*************
+/* 商品ページ戻るボタン
+*************/
+#fixedTop {
+  right: 10px;
+  bottom: 10px;
+  width: 50px;
+  height: 50px;
+  line-height: 50px;
+  color: #fff;
+  font-size: 20px;
+  text-align: center;
+  display: none;
+  background: #BDC0BA;
+  position: fixed;
+  z-index: 9999;
+  border-radius: 5px;
+  -webkit-transform: translateZ(0);
+}
+#fixedTop:hover {
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  transition: all 0.3s;
+  opacity: 0.7;
+}
+
+
+/******************
+/* あれこれ
+*******************/
+#abContents {
+  margin-top:50px;
+  margin-bottom: 50px
+}
+.index {
+  padding: 0 0 1px 13px;
+  margin:40px 0 20px 0;
+  font-size:30px;
+  border-bottom: 1px solid #ddd;
+  border-left:10px  solid #ddd;
+  clear:both;
+  letter-spacing: 0.1em;
+}
+
+#abContents p {
+  font-size: 14px;
+  line-height:20px;
+}
+
+#abContents #abContents1, #abContents2, #abContents3, #abContents4 {
+  margin-bottom: 80px;
+}
+
+/*Contents2-list*/
+ul.tool{
+  padding: 0;
+  margin: 20px ;
+  width: 100%;
+
+ }
+.tool li {
+  font-size: 14px;
+  padding: 0;
+  margin: 0;
+  float: left;
+  width: 50%;
+ }
+
+.images img {
+  margin: 30px 0 0 190px;
+}
+
+#abContents3 h3 {
+  font-size: 15px;
+}
+#abContents3 ol {
+  font-size: 14px;
+}
+#abContents4 dd {
+  font-size: 14px;
+}
+
+
+
+
+
+/*===============================================
+画面の横幅が940px以上（パソコン用）
+===============================================*/
+@media screen and (min-width: 940px){
+  #wrapper,.inner {
+  width:940px;
+  padding:0;
+  }
+
+  #tMain {
+  float:right;
+  width:690px;
+  margin-top:20px;
+  }
+
+  .inner {
+    margin-top: 20px;
+  }
+}
+
+/*===============================================
+画面の横幅が768pxまで（スマホ用）
+===============================================*/
+@media screen and (max-width:768px){
+
+  .images img {
+    max-width:100%;
+    height: auto;
+    margin:20px 0 0 100px;
+  }
+
+
+}
+
+/*===============================================
+画面の横幅が640pxまで（スマホ用）
+===============================================*/
+@media screen and (max-width:640px){
+
+  /*top*/
+  .rogo img {display: none;}
+
+  .topTxt {
+    padding: 0;
+  }
+
+  .tMain {
+    margin-bottom: 40px;
+  }
+
+  /*あれこれContents2-list*/
+  ul.tool{
+    padding: 0;
+    margin: 10px ;
+    width: 100%;
+
+   }
+  .tool li {
+    font-size: 10px;
+    padding: 0;
+    margin: 0;
+    float: left;
+    width: 50%;
+   }
+
+  .images img {
+    max-width:100%;
+    height: auto;
+    margin:20px 0 0 0;
+  }
+
+ #abContents4 {
+   margin-bottom: 20px;
+ }
+
+  /*会社概要*/
+  .cMain img {display:none;}
+
+  .companyData {
+    margin-top:0;
+    padding:10px;
+  }
+}
+
+ /*fotter*/
+#footer {
+  padding: 10px;
+}
+
+p.company {
+  margin: 5px 0 20px 0;
+}
+
+.tContents2{
+  margin-bottom: 0;
+}
+/*===============================================
+画面の横幅が320px以下
+===============================================*/
+@media screen and (max-width:320px){
+ /*fotter*/
+#footer {
+  padding: 0;
+}
+
+p.company {
+  margin-top:15px;
+}
+
+ .tel {
+   font-size: 13px;
+ }
+
+ .inner ul{
+   padding:  0;
+ }
+
+ .icon li {
+   display: inline-block;
+ }
+
+ .copyright{
+   text-align:center;
+   font-size:10px;
+ }
+
+}
