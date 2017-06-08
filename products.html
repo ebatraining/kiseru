@@ -13,16 +13,15 @@
 <link rel="stylesheet" href="css/sp.css" type="text/css" media="screen">
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <link rel="stylesheet" href="css/magnific-popup.css">
+<link rel="stylesheet" href="css/drawer.css"><!--ドロワーに必要なコード-->
+<script src="js/drawer.js"></script><!--ドロワーに必要なコード-->
+<script src="js/iscroll.js"></script><!--ドロワーに必要なコード-->
 
 <script>
 $(function() {
     $('html,body').animate({ scrollTop: 0 }, '1');
 });
 </script>
-<link rel="stylesheet" href="css/drawer.min.css"><!--ドロワーに必要なコード-->
-<script src="js/drawer.min.js"></script><!--ドロワーに必要なコード-->
-<script src="js/iscroll.js"></script><!--ドロワーに必要なコード-->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.1.0/css/drawer.min.css"><!--ドロワーに必要なコード-->
 
 <script type="text/javascript" src="jquery.js"></script>
 <script type="text/javascript">
@@ -71,16 +70,16 @@ $(this).removeClass('active');
   -->
   </head>
 
-  <body>
-    <div class="gkg">
-    <div id="header">
-    <img src="images/logo.png">
-<!--ドロワーメニューボタン-->
-        <div class="drwer drawer--right">
+<body class="drawer drawer--right">
+  
+   <div id="jq_header">
 	<button type="button" class="drawer-toggle drawer-hamburger">
 	  <span class="sr-only">toggle navigation</span>
 	  <span class="drawer-hamburger-icon"></span>
 	</button>
+    <img src="images/logo.png">
+     </div>
+  <header id="header">
       <nav class="drawer-nav">
         <ul class="drawer-menu">
           <li><a href="index.html">ホーム</a></li>
@@ -89,9 +88,8 @@ $(this).removeClass('active');
           <li><a href="company.html">会社概要</a></li>
           <li><a href="mailto:info@iizuka-k.co.jp?Subject">お問い合わせ</a></li>
         </ul>
-      </nav>
-      </div>
- <!--ドロワーメニューボタン 了-->
+		</nav>
+     </header>
 
       <!-- menu -->
       <div id="topmenu">
@@ -674,8 +672,6 @@ $(function(){
 });
 </script>
 ----->
-
-<script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.js"></script>
 <script src="js/jquery.magnific-popup.js"></script>
 <script src="js/jquery.magnific-popup.min.js"></script>
 <script>
@@ -683,8 +679,8 @@ $('.boxer').magnificPopup({
 	type: 'image'
 });
 </script>
-!--ドロワーメニュー設定-->
-  <script>
+<!--ドロワーメニュー設定-->
+<script>
 $(document).ready(function() {
   $(".drawer").drawer();
 });

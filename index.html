@@ -14,11 +14,11 @@
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 <link rel="stylesheet" href="css/jquery.fs.boxer.min.css">
 <script src="js/jquery.fs.boxer.min.js"></script>
-<link rel="stylesheet" href="css/drawer.min.css"><!--ドロワーに必要なコード-->
-<script src="js/drawer.min.js"></script><!--ドロワーに必要なコード-->
+<link rel="stylesheet" href="css/drawer.css"><!--ドロワーに必要なコード-->
+<script src="js/drawer.js"></script><!--ドロワーに必要なコード-->
 <script src="js/iscroll.js"></script><!--ドロワーに必要なコード-->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.1.0/css/drawer.min.css"><!--ドロワーに必要なコード-->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.1.0/js/drawer.min.js"></script><!--ドロワーに必要なコード-->
+<!--<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.1.0/css/drawer.css"><!--ドロワーに必要なコード-->
+<!--<script src="https://cdnjs.cloudflare.com/ajax/libs/drawer/3.1.0/js/drawer.js"></script><!--ドロワーに必要なコード-->
 
 <script type="text/javascript">
 	$(function(){
@@ -88,7 +88,8 @@ body {
 -->
 </head>
 
-<body>
+
+<body class="drawer drawer--right">
   <div id="loader-bg" class="bgimg">
     <div id=bgimg>
       <div id="loader">
@@ -97,16 +98,27 @@ body {
       </div>
     </div>
   </div>
-  <div id=wrap>
-    <div class="gkg">
-    <div id="header">
-    <!-- menu -->
-    <img src="images/logo.png">
-    <div class="drwer drawer--right">
+<!--  <div id=wrap>-->
+ <!--<div class="gkg">-->
+        <!-- menu -->
+  <!--<header id="header">
+    <div class="header2" class="open">
+  	 <div class="header_bg">
+  	 <img src="images/logo.png">
+    	<div class="toggle">
+    	<span></span>
+    	<span></span>
+    	<span></span>
+    </div>-->
+
+   <div id="jq_header">
 	<button type="button" class="drawer-toggle drawer-hamburger">
 	  <span class="sr-only">toggle navigation</span>
 	  <span class="drawer-hamburger-icon"></span>
 	</button>
+    <img src="images/logo.png">
+     </div>
+  <header id="header">
       <nav class="drawer-nav">
         <ul class="drawer-menu">
           <li><a href="index.html">ホーム</a></li>
@@ -116,15 +128,7 @@ body {
           <li><a href="mailto:info@iizuka-k.co.jp?Subject">お問い合わせ</a></li>
         </ul>
 		</nav>
-      <!--<section>
-      	<h1>メニュー</h1>
-      	<p>ホーム</p>
-      	<p>キセルのあれこれ</p>
-      	<p>作品</p>
-      	<p>会社概要</p>
-      	<p>お問合わせ</p>
-      </section>-->
-      </div>
+     </header>
       <div id="topmenu">
         <ul id="nav">
           <li class="on"><a href="index.html">ホーム</a></li>
@@ -134,7 +138,6 @@ body {
           <li class><a href="mailto:info@iizuka-k.co.jp?Subject">お問い合わせ</a></li>
         </ul>
       </div>
-    </div>
   <!-- menu end -->
   <!-- topBanner -->
     <div id="topBanner">
@@ -206,11 +209,23 @@ body {
         <p class="copyright">Copyright© 飯塚金属株式会社　All rights reserved.</p>
       </div><!-- footer end -->
     </div>
-  </div><!-- #wrap -->
-  <script>
+  </div>
+  <!-- #wrap -->
+<script>
 $(document).ready(function() {
   $(".drawer").drawer();
 });
   </script>
+<!--<script>
+	$(function(){
+	  $(function(){
+		var $header= $('#header');
+
+		$('.toggle').click(function(){
+			$header.toggleClass('open');
+		});
+	 });
+	})(jQuery);
+  </script>-->
 </body>
 </html>
